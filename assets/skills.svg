@@ -1,0 +1,56 @@
+<svg width="100%" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="cardSkill"><rect x="10" y="10" width="660" height="320" rx="16"/></clipPath>
+</defs>
+
+<rect x="10" y="10" width="660" height="320" rx="16" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+
+<text x="40" y="50" font-family="monospace" font-size="16" font-weight="500" fill="#e6edf3">&lt;skills&gt;</text>
+<text x="640" y="50" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="end">const level = 1..100</text>
+
+<g font-family="monospace" font-size="12">
+<text x="40" y="90" fill="#e6edf3">JavaScript</text>
+<text x="640" y="90" fill="#f7df1e" text-anchor="end">85%</text>
+<rect x="40" y="98" width="600" height="6" rx="3" fill="#1a1f2e"/>
+<rect x="40" y="98" width="0" height="6" rx="3" fill="#f7df1e">
+<animate attributeName="width" values="0;510" dur="1.5s" begin="0s" fill="freeze"/>
+</rect>
+
+<text x="40" y="130" fill="#e6edf3">Python</text>
+<text x="640" y="130" fill="#3776ab" text-anchor="end">80%</text>
+<rect x="40" y="138" width="600" height="6" rx="3" fill="#1a1f2e"/>
+<rect x="40" y="138" width="0" height="6" rx="3" fill="#3776ab">
+<animate attributeName="width" values="0;480" dur="1.5s" begin="0.2s" fill="freeze"/>
+</rect>
+
+<text x="40" y="170" fill="#e6edf3">HTML5</text>
+<text x="640" y="170" fill="#e34f26" text-anchor="end">90%</text>
+<rect x="40" y="178" width="600" height="6" rx="3" fill="#1a1f2e"/>
+<rect x="40" y="178" width="0" height="6" rx="3" fill="#e34f26">
+<animate attributeName="width" values="0;540" dur="1.5s" begin="0.4s" fill="freeze"/>
+</rect>
+
+<text x="40" y="210" fill="#e6edf3">CSS3</text>
+<text x="640" y="210" fill="#1572b6" text-anchor="end">85%</text>
+<rect x="40" y="218" width="600" height="6" rx="3" fill="#1a1f2e"/>
+<rect x="40" y="218" width="0" height="6" rx="3" fill="#1572b6">
+<animate attributeName="width" values="0;510" dur="1.5s" begin="0.6s" fill="freeze"/>
+</rect>
+
+<text x="40" y="250" fill="#e6edf3">Dart / Flutter</text>
+<text x="640" y="250" fill="#0175c2" text-anchor="end">75%</text>
+<rect x="40" y="258" width="600" height="6" rx="3" fill="#1a1f2e"/>
+<rect x="40" y="258" width="0" height="6" rx="3" fill="#0175c2">
+<animate attributeName="width" values="0;450" dur="1.5s" begin="0.8s" fill="freeze"/>
+</rect>
+
+<text x="40" y="290" fill="#e6edf3">MySQL</text>
+<text x="640" y="290" fill="#00758f" text-anchor="end">70%</text>
+<rect x="40" y="298" width="600" height="6" rx="3" fill="#1a1f2e"/>
+<rect x="40" y="298" width="0" height="6" rx="3" fill="#00758f">
+<animate attributeName="width" values="0;420" dur="1.5s" begin="1s" fill="freeze"/>
+</rect>
+</g>
+
+<text x="40" y="322" font-family="monospace" font-size="16" font-weight="500" fill="#e6edf3">&lt;/skills&gt;</text>
+</svg>

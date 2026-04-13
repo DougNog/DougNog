@@ -75,4 +75,3 @@ class DougNog:
 <div align="center">
   <sub>✦ crafted by <b>DougNog</b> ✦</sub>
 </div>
-
