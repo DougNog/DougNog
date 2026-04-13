@@ -1,42 +1,71 @@
-<!-- =============================================== -->
-<!--  README ÚNICO • DougNog • criado do zero         -->
-<!--  Os SVGs deste README são customizados, não      -->
-<!--  gerados por serviços genéricos como shields.io  -->
-<!-- =============================================== -->
+<!-- ============================================================ -->
+<!--  DougNog • README único                                       -->
+<!--  Todos os SVGs deste README foram desenhados à mão —          -->
+<!--  nada foi gerado por serviços tipo shields.io genéricos.      -->
+<!-- ============================================================ -->
 
 <div align="center">
-  <img src="./assets/banner.svg" alt="DougNog banner animado" width="100%"/>
+  <img src="./assets/banner.svg" alt="DougNog banner" width="100%"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <a href="https://github.com/DougNog"><img src="https://komarev.com/ghpvc/?username=DougNog&label=Visitantes&color=6c63ff&style=flat-square" alt="views"/></a>
+  <img src="https://komarev.com/ghpvc/?username=DougNog&label=Visitantes&color=6c63ff&style=flat-square" alt="views"/>
   <img src="https://img.shields.io/github/followers/DougNog?label=Followers&style=flat-square&color=6c63ff&labelColor=0d1117" alt="followers"/>
   <img src="https://img.shields.io/github/stars/DougNog?label=Stars&style=flat-square&color=6c63ff&labelColor=0d1117" alt="stars"/>
 </div>
 
 ---
 
-## ╭─ Sobre
+## ╭─ Character sheet
 
-```python
-class DougNog:
-    role        = "Web & Mobile Developer"
-    stack       = ["HTML", "CSS", "JavaScript", "Python", "Dart", "MySQL"]
-    mindset     = "build → break → learn → repeat"
-    coffee      = float("inf")
-
-    def hello(self):
-        return "Bem-vindo ao meu canto do GitHub 👾"
-```
+<div align="center">
+  <img src="./assets/rpg-console.svg" alt="DougNog RPG stats" width="100%"/>
+</div>
 
 ---
 
-## ╭─ Skills ao vivo
+## ╭─ Terminal ao vivo
 
 <div align="center">
-  <img src="./assets/skills.svg" alt="Skills animadas" width="100%"/>
+  <img src="./assets/terminal-loop.svg" alt="Terminal rodando em loop" width="100%"/>
+</div>
+
+---
+
+## ╭─ Skills
+
+<div align="center">
+  <img src="./assets/skills.svg" alt="Skills" width="100%"/>
+</div>
+
+---
+
+## ╭─ Jornada de aprendizado
+
+> 🌱 **Ainda não tenho projetos públicos pra mostrar — e tá tudo bem.**
+> Estou na fase de construir uma base sólida. Cada commit aqui é uma página da minha jornada. Volta aqui em breve que vai ter coisa nova. 🚀
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────┐
+│                                             │
+│   📚  Em aprendizado agora                  │
+│   ───────────────────────                   │
+│   →  Aprofundando JavaScript moderno        │
+│   →  Explorando Flutter com Dart            │
+│   →  Construindo backends com Python        │
+│   →  Modelando dados com MySQL              │
+│                                             │
+│   🎯  Próximo boss                          │
+│   ───────────────────────                   │
+│   →  Primeiro projeto full-stack público    │
+│                                             │
+└─────────────────────────────────────────────┘
+```
+
 </div>
 
 ---
@@ -73,6 +102,5 @@ class DougNog:
 <br/>
 
 <div align="center">
-  <sub>✦ crafted by <b>DougNog</b> ✦</sub>
+  <sub>✦ crafted by <b>DougNog</b> • never stop learning ✦</sub>
 </div>
-

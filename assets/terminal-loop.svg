@@ -1,0 +1,96 @@
+<svg width="100%" viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg">
+<rect x="10" y="10" width="660" height="260" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+
+<rect x="10" y="10" width="660" height="34" rx="12" fill="#161b22"/>
+<rect x="10" y="28" width="660" height="16" fill="#161b22"/>
+<circle cx="32" cy="27" r="5" fill="#ff5f56"/>
+<circle cx="50" cy="27" r="5" fill="#ffbd2e"/>
+<circle cx="68" cy="27" r="5" fill="#27c93f"/>
+<text x="340" y="31" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="middle">dougnog@dev ~ </text>
+<line x1="10" y1="44" x2="670" y2="44" stroke="#21262d" stroke-width="0.5"/>
+
+<g font-family="monospace" font-size="13">
+
+<g>
+<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.24;0.25;1" dur="12s" repeatCount="indefinite"/>
+<text x="30" y="75" fill="#27c93f">➜</text>
+<text x="50" y="75" fill="#00d9ff">~</text>
+<text x="70" y="75" fill="#e6edf3">whoami</text>
+<text x="30" y="100" fill="#6c63ff">DougNog</text>
+<text x="30" y="125" fill="#6b7280">// web &amp; mobile developer from Brazil 🇧🇷</text>
+<text x="30" y="160" fill="#27c93f">➜</text>
+<text x="50" y="160" fill="#00d9ff">~</text>
+<text x="70" y="160" fill="#e6edf3">cat skills.json</text>
+<text x="30" y="185" fill="#e6edf3">{</text>
+<text x="50" y="205" fill="#f7df1e">"languages"</text>
+<text x="155" y="205" fill="#e6edf3">: [</text>
+<text x="195" y="205" fill="#00d9ff">"HTML", "CSS", "JS", "Python", "Dart"</text>
+<text x="535" y="205" fill="#e6edf3">],</text>
+<text x="50" y="225" fill="#f7df1e">"database"</text>
+<text x="145" y="225" fill="#e6edf3">: </text>
+<text x="165" y="225" fill="#00d9ff">"MySQL"</text>
+<text x="30" y="245" fill="#e6edf3">}</text>
+</g>
+
+<g opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.25;0.26;0.49;0.5;1" dur="12s" repeatCount="indefinite"/>
+<text x="30" y="75" fill="#27c93f">➜</text>
+<text x="50" y="75" fill="#00d9ff">~</text>
+<text x="70" y="75" fill="#e6edf3">ls ~/learning</text>
+<text x="30" y="100" fill="#00d9ff">flutter/</text>
+<text x="130" y="100" fill="#00d9ff">react/</text>
+<text x="210" y="100" fill="#00d9ff">node/</text>
+<text x="280" y="100" fill="#00d9ff">git/</text>
+<text x="340" y="100" fill="#00d9ff">docker/</text>
+<text x="30" y="135" fill="#27c93f">➜</text>
+<text x="50" y="135" fill="#00d9ff">~</text>
+<text x="70" y="135" fill="#e6edf3">echo $CURRENT_FOCUS</text>
+<text x="30" y="160" fill="#f7df1e">"Aprender tudo que me deixa melhor"</text>
+<text x="30" y="195" fill="#27c93f">➜</text>
+<text x="50" y="195" fill="#00d9ff">~</text>
+<text x="70" y="195" fill="#e6edf3">uptime</text>
+<text x="30" y="220" fill="#6b7280">coding daily • never stop learning</text>
+</g>
+
+<g opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.51;0.74;0.75;1" dur="12s" repeatCount="indefinite"/>
+<text x="30" y="75" fill="#27c93f">➜</text>
+<text x="50" y="75" fill="#00d9ff">~</text>
+<text x="70" y="75" fill="#e6edf3">git log --oneline</text>
+<text x="30" y="100" fill="#f7df1e">c4f3b42</text>
+<text x="95" y="100" fill="#e6edf3">feat: aprendendo flutter</text>
+<text x="30" y="120" fill="#f7df1e">a1b2c3d</text>
+<text x="95" y="120" fill="#e6edf3">fix: bug no javascript</text>
+<text x="30" y="140" fill="#f7df1e">9e8d7f6</text>
+<text x="95" y="140" fill="#e6edf3">docs: novo readme 🎨</text>
+<text x="30" y="160" fill="#f7df1e">5a4b3c2</text>
+<text x="95" y="160" fill="#e6edf3">feat: primeiro commit</text>
+<text x="30" y="195" fill="#27c93f">➜</text>
+<text x="50" y="195" fill="#00d9ff">~</text>
+<text x="70" y="195" fill="#e6edf3">git status</text>
+<text x="30" y="220" fill="#00d9ff">On branch main</text>
+<text x="30" y="240" fill="#27c93f">nothing to commit, working tree ready 🚀</text>
+</g>
+
+<g opacity="0">
+<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.75;0.76;0.99;1" dur="12s" repeatCount="indefinite"/>
+<text x="30" y="75" fill="#27c93f">➜</text>
+<text x="50" y="75" fill="#00d9ff">~</text>
+<text x="70" y="75" fill="#e6edf3">fortune</text>
+<text x="30" y="110" fill="#f7df1e">"Primeiro faça funcionar, depois</text>
+<text x="30" y="130" fill="#f7df1e"> faça certo, depois faça rápido."</text>
+<text x="30" y="150" fill="#6b7280">— Kent Beck</text>
+<text x="30" y="185" fill="#27c93f">➜</text>
+<text x="50" y="185" fill="#00d9ff">~</text>
+<text x="70" y="185" fill="#e6edf3">contact --all</text>
+<text x="30" y="210" fill="#00d9ff">→</text>
+<text x="50" y="210" fill="#e6edf3">github.com/DougNog</text>
+<text x="30" y="230" fill="#00d9ff">→</text>
+<text x="50" y="230" fill="#e6edf3">sempre aberto pra trocar ideia</text>
+</g>
+
+<rect x="30" y="255" width="10" height="14" fill="#6c63ff">
+<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+</rect>
+</g>
+</svg>
