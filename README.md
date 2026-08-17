@@ -4,7 +4,7 @@
 <!-- ============================================================ -->
 
 <div align="center">
-  <img src="./assets/banner.svg" alt="DougNog banner animado" width="100%"/>
+  <img src="https://raw.githubusercontent.com/DougNog/DougNog/f8c4bd8a3eb526ceccf44a5500b79d04e002a48a/assets/banner.svg" alt="DougNog banner animado" width="100%"/>
 </div>
 
 <br/>
@@ -32,7 +32,7 @@ Este perfil é meu laboratório público: registro o que estou estudando, as fer
 ## ╭─ Character sheet
 
 <div align="center">
-  <img src="./assets/rpg-console.svg" alt="DougNog RPG stats animado" width="100%"/>
+  <img src="https://raw.githubusercontent.com/DougNog/DougNog/f8c4bd8a3eb526ceccf44a5500b79d04e002a48a/assets/rpg-console.svg" alt="DougNog RPG stats animado" width="100%"/>
 </div>
 
 ---
@@ -40,7 +40,7 @@ Este perfil é meu laboratório público: registro o que estou estudando, as fer
 ## ╭─ Terminal ao vivo
 
 <div align="center">
-  <img src="./assets/terminal-loop.svg" alt="Terminal animado rodando em loop" width="100%"/>
+  <img src="https://raw.githubusercontent.com/DougNog/DougNog/f8c4bd8a3eb526ceccf44a5500b79d04e002a48a/assets/terminal-loop.svg" alt="Terminal animado rodando em loop" width="100%"/>
 </div>
 
 ---
@@ -48,7 +48,7 @@ Este perfil é meu laboratório público: registro o que estou estudando, as fer
 ## ╭─ Skills
 
 <div align="center">
-  <img src="./assets/skills.svg" alt="Painel animado de skills" width="100%"/>
+  <img src="https://raw.githubusercontent.com/DougNog/DougNog/f8c4bd8a3eb526ceccf44a5500b79d04e002a48a/assets/skills.svg" alt="Painel animado de skills" width="100%"/>
 </div>
 
 ---
