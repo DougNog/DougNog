@@ -1,0 +1,24 @@
+<svg width="100%" viewBox="0 0 680 250" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#7c72ff"/></linearGradient>
+</defs>
+<rect x="10" y="10" width="660" height="230" rx="16" fill="#0d1117" stroke="#21262d"/>
+<text x="38" y="48" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#f0f6fc">Core technologies</text>
+<text x="38" y="70" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#8b949e">Tools and languages I am actively using or studying.</text>
+<rect x="38" y="88" width="604" height="1" fill="#21262d"/>
+
+<g font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">
+  <g transform="translate(38,112)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Front-end</text><text x="16" y="33" fill="#8b949e">HTML • CSS • JS</text></g>
+  <g transform="translate(178,112)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Back-end</text><text x="16" y="33" fill="#8b949e">Python • PHP</text></g>
+  <g transform="translate(318,112)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Mobile</text><text x="16" y="33" fill="#8b949e">Dart • Flutter</text></g>
+  <g transform="translate(458,112)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Data</text><text x="16" y="33" fill="#8b949e">MySQL</text></g>
+
+  <g transform="translate(108,172)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Systems</text><text x="16" y="33" fill="#8b949e">C • C++</text></g>
+  <g transform="translate(248,172)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Versioning</text><text x="16" y="33" fill="#8b949e">Git • GitHub</text></g>
+  <g transform="translate(388,172)"><rect width="128" height="42" rx="10" fill="#161b22" stroke="#30363d"/><text x="16" y="18" fill="#f0f6fc">Editor</text><text x="16" y="33" fill="#8b949e">VS Code</text></g>
+</g>
+
+<rect x="38" y="226" width="120" height="2" rx="1" fill="url(#accent)">
+  <animate attributeName="width" values="50;120;50" dur="7s" repeatCount="indefinite"/>
+</rect>
+</svg>
