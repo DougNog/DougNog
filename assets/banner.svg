@@ -1,70 +1,134 @@
 <svg width="100%" viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0" stop-color="#0d1117"/>
-<stop offset="1" stop-color="#161b33"/>
-</linearGradient>
-<clipPath id="card"><rect x="20" y="20" width="640" height="220" rx="16"/></clipPath>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0d1117"/>
+    <stop offset="0.55" stop-color="#12172a"/>
+    <stop offset="1" stop-color="#171b35"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#6c63ff"/>
+    <stop offset="1" stop-color="#00d9ff"/>
+  </linearGradient>
+  <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#6c63ff" stop-opacity=".20"/>
+    <stop offset="1" stop-color="#6c63ff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <clipPath id="card"><rect x="20" y="20" width="640" height="220" rx="16"/></clipPath>
 </defs>
 
-<rect x="20" y="20" width="640" height="220" rx="16" fill="url(#bg)"/>
+<rect x="20" y="20" width="640" height="220" rx="16" fill="url(#bg)" stroke="#252b45" stroke-width="1"/>
 
 <g clip-path="url(#card)">
-<circle cx="580" cy="60" r="80" fill="none" stroke="#6c63ff" stroke-width="0.8" opacity="0.25">
-<animate attributeName="r" values="60;90;60" dur="4s" repeatCount="indefinite"/>
-</circle>
-<circle cx="580" cy="60" r="50" fill="none" stroke="#6c63ff" stroke-width="0.8" opacity="0.35">
-<animate attributeName="r" values="40;70;40" dur="4s" repeatCount="indefinite"/>
-</circle>
-<polygon points="80,200 100,170 120,200" fill="none" stroke="#00d9ff" stroke-width="1.2" opacity="0.6">
-<animateTransform attributeName="transform" type="rotate" from="0 100 185" to="360 100 185" dur="8s" repeatCount="indefinite"/>
-</polygon>
-<rect x="600" y="180" width="24" height="24" fill="none" stroke="#ffb86c" stroke-width="1.2" opacity="0.6">
-<animateTransform attributeName="transform" type="rotate" from="0 612 192" to="-360 612 192" dur="6s" repeatCount="indefinite"/>
-</rect>
+  <circle cx="575" cy="60" r="94" fill="url(#orb)">
+    <animate attributeName="r" values="86;106;86" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".7;1;.7" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <g fill="none" stroke="#6c63ff" stroke-width=".8" opacity=".28">
+    <circle cx="580" cy="60" r="58">
+      <animate attributeName="r" values="52;72;52" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="580" cy="60" r="83">
+      <animate attributeName="r" values="76;96;76" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g opacity=".72">
+    <circle cx="565" cy="38" r="2.5" fill="#00d9ff" filter="url(#glow)">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M 0 0 C 25 -12 55 18 82 -5 C 52 30 20 30 0 0 Z"/>
+    </circle>
+    <circle cx="610" cy="72" r="2" fill="#6c63ff" filter="url(#glow)">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M 0 0 C -28 20 -55 -10 -72 18 C -42 -30 -10 -22 0 0 Z"/>
+    </circle>
+  </g>
+
+  <polygon points="80,200 100,170 120,200" fill="none" stroke="#00d9ff" stroke-width="1.2" opacity=".62">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 185" to="360 100 185" dur="10s" repeatCount="indefinite"/>
+  </polygon>
+  <rect x="600" y="180" width="24" height="24" fill="none" stroke="#ffb86c" stroke-width="1.2" opacity=".58">
+    <animateTransform attributeName="transform" type="rotate" from="0 612 192" to="-360 612 192" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="22" y="-30" width="636" height="26" fill="#00d9ff" opacity=".025">
+    <animate attributeName="y" values="-30;250" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
 </g>
 
-<rect x="40" y="45" width="600" height="28" rx="6" fill="#1a1f2e" stroke="#2d3447" stroke-width="0.5"/>
+<rect x="40" y="45" width="600" height="28" rx="6" fill="#1a1f2e" stroke="#2d3447" stroke-width=".5"/>
 <circle cx="56" cy="59" r="4" fill="#ff5f56"/>
 <circle cx="70" cy="59" r="4" fill="#ffbd2e"/>
 <circle cx="84" cy="59" r="4" fill="#27c93f"/>
 <text x="325" y="63" fill="#6b7280" font-family="monospace" font-size="11" text-anchor="middle">~/dougnog — zsh</text>
 
 <text x="50" y="105" font-family="monospace" font-size="13" fill="#27c93f">$</text>
-<text x="68" y="105" font-family="monospace" font-size="13" fill="#e6edf3">whoami</text>
-
-<text x="50" y="135" font-family="monospace" font-size="22" font-weight="500" fill="#e6edf3">&gt; </text>
-<text x="78" y="135" font-family="monospace" font-size="22" font-weight="500" fill="#6c63ff">
-<tspan>D</tspan><tspan><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.05;0.1;1" dur="4s" repeatCount="indefinite"/>o</tspan><tspan><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1;0.15;1" dur="4s" repeatCount="indefinite"/>u</tspan><tspan><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.15;0.2;1" dur="4s" repeatCount="indefinite"/>g</tspan><tspan fill="#00d9ff"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2;0.25;1" dur="4s" repeatCount="indefinite"/>N</tspan><tspan fill="#00d9ff"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.25;0.3;1" dur="4s" repeatCount="indefinite"/>o</tspan><tspan fill="#00d9ff"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.3;0.35;1" dur="4s" repeatCount="indefinite"/>g</tspan>
+<text x="68" y="105" font-family="monospace" font-size="13" fill="#e6edf3">
+  <tspan opacity="0">w<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.04;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan opacity="0">h<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.04;.08;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan opacity="0">o<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.08;.12;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan opacity="0">a<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.12;.16;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan opacity="0">m<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.16;.20;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan opacity="0">i<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.20;.24;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
 </text>
-<rect x="185" y="118" width="10" height="22" fill="#6c63ff">
-<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+
+<text x="50" y="138" font-family="monospace" font-size="22" font-weight="600" fill="#e6edf3">&gt;</text>
+<text x="78" y="138" font-family="monospace" font-size="22" font-weight="600">
+  <tspan fill="#6c63ff">D</tspan>
+  <tspan fill="#6c63ff" opacity="0">o<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.26;.30;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan fill="#6c63ff" opacity="0">u<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.30;.34;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan fill="#6c63ff" opacity="0">g<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.34;.38;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan fill="#00d9ff" opacity="0">N<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.38;.42;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan fill="#00d9ff" opacity="0">o<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.42;.46;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+  <tspan fill="#00d9ff" opacity="0">g<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.46;.50;.92;1" dur="5.6s" repeatCount="indefinite"/></tspan>
+</text>
+
+<rect x="183" y="120" width="10" height="22" rx="1" fill="#6c63ff" filter="url(#glow)">
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.48;.5;1" dur=".95s" repeatCount="indefinite"/>
 </rect>
 
-<text x="50" y="165" font-family="monospace" font-size="12" fill="#6b7280">// web &amp; mobile developer</text>
+<text x="50" y="166" font-family="monospace" font-size="12" fill="#6b7280">// building web + mobile experiences</text>
 
 <g font-family="monospace" font-size="11">
-<rect x="50" y="185" width="54" height="22" rx="11" fill="none" stroke="#f7df1e" stroke-width="1"/>
-<text x="77" y="200" fill="#f7df1e" text-anchor="middle">JS</text>
-
-<rect x="112" y="185" width="70" height="22" rx="11" fill="none" stroke="#3776ab" stroke-width="1"/>
-<text x="147" y="200" fill="#3776ab" text-anchor="middle">Python</text>
-
-<rect x="190" y="185" width="58" height="22" rx="11" fill="none" stroke="#0175c2" stroke-width="1"/>
-<text x="219" y="200" fill="#0175c2" text-anchor="middle">Dart</text>
-
-<rect x="256" y="185" width="58" height="22" rx="11" fill="none" stroke="#e34f26" stroke-width="1"/>
-<text x="285" y="200" fill="#e34f26" text-anchor="middle">HTML</text>
-
-<rect x="322" y="185" width="50" height="22" rx="11" fill="none" stroke="#1572b6" stroke-width="1"/>
-<text x="347" y="200" fill="#1572b6" text-anchor="middle">CSS</text>
-
-<rect x="380" y="185" width="60" height="22" rx="11" fill="none" stroke="#00758f" stroke-width="1"/>
-<text x="410" y="200" fill="#00758f" text-anchor="middle">MySQL</text>
+  <g>
+    <rect x="50" y="185" width="54" height="22" rx="11" fill="none" stroke="#f7df1e"/>
+    <text x="77" y="200" fill="#f7df1e" text-anchor="middle">JS</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin=".2s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <rect x="112" y="185" width="70" height="22" rx="11" fill="none" stroke="#3776ab"/>
+    <text x="147" y="200" fill="#3776ab" text-anchor="middle">Python</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin=".45s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <rect x="190" y="185" width="58" height="22" rx="11" fill="none" stroke="#0175c2"/>
+    <text x="219" y="200" fill="#0175c2" text-anchor="middle">Dart</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin=".7s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <rect x="256" y="185" width="58" height="22" rx="11" fill="none" stroke="#e34f26"/>
+    <text x="285" y="200" fill="#e34f26" text-anchor="middle">HTML</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin=".95s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <rect x="322" y="185" width="50" height="22" rx="11" fill="none" stroke="#1572b6"/>
+    <text x="347" y="200" fill="#1572b6" text-anchor="middle">CSS</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin="1.2s" repeatCount="indefinite"/>
+  </g>
+  <g>
+    <rect x="380" y="185" width="60" height="22" rx="11" fill="none" stroke="#00758f"/>
+    <text x="410" y="200" fill="#00758f" text-anchor="middle">MySQL</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="4s" begin="1.45s" repeatCount="indefinite"/>
+  </g>
 </g>
 
 <rect x="50" y="220" width="580" height="3" rx="1.5" fill="#1a1f2e"/>
-<rect x="50" y="220" width="0" height="3" rx="1.5" fill="#6c63ff">
-<animate attributeName="width" values="0;580;580;0" keyTimes="0;0.5;0.9;1" dur="5s" repeatCount="indefinite"/>
+<rect x="50" y="220" width="0" height="3" rx="1.5" fill="url(#accent)" filter="url(#glow)">
+  <animate attributeName="width" values="0;580;580;0" keyTimes="0;.55;.88;1" dur="5.6s" repeatCount="indefinite"/>
 </rect>
 </svg>

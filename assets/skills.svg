@@ -1,56 +1,77 @@
 <svg width="100%" viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<clipPath id="cardSkill"><rect x="10" y="10" width="660" height="320" rx="16"/></clipPath>
+  <clipPath id="cardSkill"><rect x="10" y="10" width="660" height="320" rx="16"/></clipPath>
+  <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#6c63ff" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#6c63ff" stop-opacity=".20"/>
+    <stop offset="1" stop-color="#00d9ff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="barGlow" x="-30%" y="-200%" width="160%" height="500%">
+    <feGaussianBlur stdDeviation="2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
 </defs>
 
-<rect x="10" y="10" width="660" height="320" rx="16" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+<rect x="10" y="10" width="660" height="320" rx="16" fill="#0d1117" stroke="#21262d"/>
 
-<text x="40" y="50" font-family="monospace" font-size="16" font-weight="500" fill="#e6edf3">&lt;skills&gt;</text>
+<g clip-path="url(#cardSkill)">
+  <rect x="-220" y="10" width="220" height="320" fill="url(#scan)">
+    <animate attributeName="x" values="-220;680" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<text x="40" y="50" font-family="monospace" font-size="16" font-weight="600" fill="#e6edf3">&lt;skills&gt;</text>
 <text x="640" y="50" font-family="monospace" font-size="11" fill="#6b7280" text-anchor="end">const level = 1..100</text>
 
 <g font-family="monospace" font-size="12">
-<text x="40" y="90" fill="#e6edf3">JavaScript</text>
-<text x="640" y="90" fill="#f7df1e" text-anchor="end">85%</text>
-<rect x="40" y="98" width="600" height="6" rx="3" fill="#1a1f2e"/>
-<rect x="40" y="98" width="0" height="6" rx="3" fill="#f7df1e">
-<animate attributeName="width" values="0;510" dur="1.5s" begin="0s" fill="freeze"/>
-</rect>
+  <text x="40" y="90" fill="#e6edf3">JavaScript</text>
+  <text x="640" y="90" fill="#f7df1e" text-anchor="end">85%</text>
+  <rect x="40" y="98" width="600" height="6" rx="3" fill="#1a1f2e"/>
+  <rect x="40" y="98" width="0" height="6" rx="3" fill="#f7df1e" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;510;510;0" keyTimes="0;.22;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
-<text x="40" y="130" fill="#e6edf3">Python</text>
-<text x="640" y="130" fill="#3776ab" text-anchor="end">80%</text>
-<rect x="40" y="138" width="600" height="6" rx="3" fill="#1a1f2e"/>
-<rect x="40" y="138" width="0" height="6" rx="3" fill="#3776ab">
-<animate attributeName="width" values="0;480" dur="1.5s" begin="0.2s" fill="freeze"/>
-</rect>
+  <text x="40" y="130" fill="#e6edf3">Python</text>
+  <text x="640" y="130" fill="#3776ab" text-anchor="end">80%</text>
+  <rect x="40" y="138" width="600" height="6" rx="3" fill="#1a1f2e"/>
+  <rect x="40" y="138" width="0" height="6" rx="3" fill="#3776ab" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;0;480;480;0" keyTimes="0;.04;.26;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
-<text x="40" y="170" fill="#e6edf3">HTML5</text>
-<text x="640" y="170" fill="#e34f26" text-anchor="end">90%</text>
-<rect x="40" y="178" width="600" height="6" rx="3" fill="#1a1f2e"/>
-<rect x="40" y="178" width="0" height="6" rx="3" fill="#e34f26">
-<animate attributeName="width" values="0;540" dur="1.5s" begin="0.4s" fill="freeze"/>
-</rect>
+  <text x="40" y="170" fill="#e6edf3">HTML5</text>
+  <text x="640" y="170" fill="#e34f26" text-anchor="end">90%</text>
+  <rect x="40" y="178" width="600" height="6" rx="3" fill="#1a1f2e"/>
+  <rect x="40" y="178" width="0" height="6" rx="3" fill="#e34f26" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;0;540;540;0" keyTimes="0;.08;.30;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
-<text x="40" y="210" fill="#e6edf3">CSS3</text>
-<text x="640" y="210" fill="#1572b6" text-anchor="end">85%</text>
-<rect x="40" y="218" width="600" height="6" rx="3" fill="#1a1f2e"/>
-<rect x="40" y="218" width="0" height="6" rx="3" fill="#1572b6">
-<animate attributeName="width" values="0;510" dur="1.5s" begin="0.6s" fill="freeze"/>
-</rect>
+  <text x="40" y="210" fill="#e6edf3">CSS3</text>
+  <text x="640" y="210" fill="#1572b6" text-anchor="end">85%</text>
+  <rect x="40" y="218" width="600" height="6" rx="3" fill="#1a1f2e"/>
+  <rect x="40" y="218" width="0" height="6" rx="3" fill="#1572b6" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;0;510;510;0" keyTimes="0;.12;.34;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
-<text x="40" y="250" fill="#e6edf3">Dart / Flutter</text>
-<text x="640" y="250" fill="#0175c2" text-anchor="end">75%</text>
-<rect x="40" y="258" width="600" height="6" rx="3" fill="#1a1f2e"/>
-<rect x="40" y="258" width="0" height="6" rx="3" fill="#0175c2">
-<animate attributeName="width" values="0;450" dur="1.5s" begin="0.8s" fill="freeze"/>
-</rect>
+  <text x="40" y="250" fill="#e6edf3">Dart / Flutter</text>
+  <text x="640" y="250" fill="#0175c2" text-anchor="end">75%</text>
+  <rect x="40" y="258" width="600" height="6" rx="3" fill="#1a1f2e"/>
+  <rect x="40" y="258" width="0" height="6" rx="3" fill="#0175c2" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;0;450;450;0" keyTimes="0;.16;.38;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
 
-<text x="40" y="290" fill="#e6edf3">MySQL</text>
-<text x="640" y="290" fill="#00758f" text-anchor="end">70%</text>
-<rect x="40" y="298" width="600" height="6" rx="3" fill="#1a1f2e"/>
-<rect x="40" y="298" width="0" height="6" rx="3" fill="#00758f">
-<animate attributeName="width" values="0;420" dur="1.5s" begin="1s" fill="freeze"/>
-</rect>
+  <text x="40" y="290" fill="#e6edf3">MySQL</text>
+  <text x="640" y="290" fill="#00758f" text-anchor="end">70%</text>
+  <rect x="40" y="298" width="600" height="6" rx="3" fill="#1a1f2e"/>
+  <rect x="40" y="298" width="0" height="6" rx="3" fill="#00758f" filter="url(#barGlow)">
+    <animate attributeName="width" values="0;0;420;420;0" keyTimes="0;.20;.42;.86;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
 </g>
 
-<text x="40" y="322" font-family="monospace" font-size="16" font-weight="500" fill="#e6edf3">&lt;/skills&gt;</text>
+<g fill="#6c63ff">
+  <circle cx="618" cy="318" r="2"><animate attributeName="opacity" values=".15;1;.15" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="628" cy="318" r="2"><animate attributeName="opacity" values=".15;1;.15" dur="2.4s" begin=".25s" repeatCount="indefinite"/></circle>
+  <circle cx="638" cy="318" r="2"><animate attributeName="opacity" values=".15;1;.15" dur="2.4s" begin=".5s" repeatCount="indefinite"/></circle>
+</g>
+
+<text x="40" y="322" font-family="monospace" font-size="16" font-weight="600" fill="#e6edf3">&lt;/skills&gt;</text>
 </svg>
