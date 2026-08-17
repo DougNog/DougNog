@@ -1,0 +1,118 @@
+<svg width="100%" viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M20 0H0V20" fill="none" stroke="#1a1f2e" stroke-width=".5"/>
+  </pattern>
+  <linearGradient id="xp" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8b5cf6"/>
+    <stop offset="1" stop-color="#00e5ff"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="card"><rect x="10" y="10" width="660" height="400" rx="16"/></clipPath>
+</defs>
+
+<rect x="10" y="10" width="660" height="400" rx="16" fill="#0d1117"/>
+<rect x="10" y="10" width="660" height="400" rx="16" fill="url(#grid)" opacity=".7"/>
+<rect x="10" y="10" width="660" height="400" rx="16" fill="none" stroke="#6c63ff" stroke-width="1.2">
+  <animate attributeName="stroke-opacity" values=".35;1;.35" dur="3s" repeatCount="indefinite"/>
+</rect>
+
+<g clip-path="url(#card)" opacity=".05">
+  <rect x="10" y="-80" width="660" height="50" fill="#00d9ff">
+    <animate attributeName="y" values="-80;440" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<rect x="30" y="30" width="170" height="18" rx="4" fill="#6c63ff"/>
+<text x="115" y="43" font-family="monospace" font-size="11" font-weight="700" fill="#0d1117" text-anchor="middle">CHARACTER SHEET</text>
+<text x="640" y="43" font-family="monospace" font-size="10" fill="#00d9ff" text-anchor="end">PLAYER // DOUGNOG</text>
+
+<!-- AVATAR -->
+<g transform="translate(35,70)">
+  <rect width="125" height="145" rx="10" fill="#141a28" stroke="#30384d"/>
+  <circle cx="62" cy="54" r="36" fill="none" stroke="#6c63ff" stroke-width="1.5" opacity=".5">
+    <animate attributeName="r" values="30;40;30" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".2;.9;.2" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="62" cy="47" r="13" fill="#8b5cf6" filter="url(#glow)"/>
+  <path d="M38 84Q62 65 86 84V94H38Z" fill="#8b5cf6"/>
+  <text x="62" y="119" font-family="monospace" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">DougNog</text>
+  <text x="62" y="135" font-family="monospace" font-size="9.5" fill="#00e5ff" text-anchor="middle">LV.15 • WEB DEV</text>
+</g>
+
+<!-- HP MP XP : intentionally confined to x=185..415 -->
+<g transform="translate(185,72)" font-family="monospace" font-size="10">
+  <text x="0" y="10" fill="#94a3b8">HP</text>
+  <rect x="28" y="1" width="160" height="11" rx="3" fill="#20283a"/>
+  <rect x="28" y="1" width="0" height="11" rx="3" fill="#ff5f56" filter="url(#glow)">
+    <animate attributeName="width" values="0;145;145;0" keyTimes="0;.25;.88;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <text x="198" y="10" fill="#e6edf3">180/200</text>
+
+  <text x="0" y="39" fill="#94a3b8">MP</text>
+  <rect x="28" y="30" width="160" height="11" rx="3" fill="#20283a"/>
+  <rect x="28" y="30" width="0" height="11" rx="3" fill="#00e5ff" filter="url(#glow)">
+    <animate attributeName="width" values="0;0;120;120;0" keyTimes="0;.05;.30;.88;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <text x="198" y="39" fill="#e6edf3">150/200</text>
+
+  <text x="0" y="68" fill="#94a3b8">XP</text>
+  <rect x="28" y="59" width="160" height="11" rx="3" fill="#20283a"/>
+  <rect x="28" y="59" width="0" height="11" rx="3" fill="url(#xp)" filter="url(#glow)">
+    <animate attributeName="width" values="0;0;112;112;0" keyTimes="0;.10;.35;.88;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <text x="198" y="68" fill="#e6edf3">1420/2000</text>
+</g>
+
+<!-- ATTRIBUTES : separate central panel -->
+<g transform="translate(185,165)" font-family="monospace">
+  <rect x="-10" y="-18" width="260" height="128" rx="8" fill="#121826" stroke="#262f43"/>
+  <text x="4" y="3" font-size="10" fill="#6c63ff">ATTRIBUTES</text>
+  <g font-size="10.5">
+    <text x="4" y="28" fill="#e6edf3">STR</text><text x="46" y="28" fill="#00e5ff">14</text><text x="72" y="28" fill="#64748b">HTML</text>
+    <text x="4" y="51" fill="#e6edf3">DEX</text><text x="46" y="51" fill="#00e5ff">16</text><text x="72" y="51" fill="#64748b">CSS</text>
+    <text x="4" y="74" fill="#e6edf3">INT</text><text x="46" y="74" fill="#00e5ff">15</text><text x="72" y="74" fill="#64748b">JS</text>
+
+    <text x="135" y="28" fill="#e6edf3">WIS</text><text x="177" y="28" fill="#00e5ff">13</text><text x="203" y="28" fill="#64748b">PY</text>
+    <text x="135" y="51" fill="#e6edf3">CHA</text><text x="177" y="51" fill="#00e5ff">12</text><text x="203" y="51" fill="#64748b">DART</text>
+    <text x="135" y="74" fill="#e6edf3">CON</text><text x="177" y="74" fill="#00e5ff">11</text><text x="203" y="74" fill="#64748b">SQL</text>
+  </g>
+  <rect x="4" y="90" width="225" height="4" rx="2" fill="#20283a"/>
+  <rect x="4" y="90" width="0" height="4" rx="2" fill="url(#xp)">
+    <animate attributeName="width" values="0;225;225;0" keyTimes="0;.45;.9;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- EQUIPMENT : starts at x=465, leaving a clear gap -->
+<g transform="translate(465,70)" font-family="monospace">
+  <rect width="175" height="225" rx="10" fill="#141a28" stroke="#30384d"/>
+  <text x="87.5" y="24" font-size="11" font-weight="700" fill="#8b5cf6" text-anchor="middle">EQUIPMENT</text>
+  <line x1="14" y1="35" x2="161" y2="35" stroke="#30384d"/>
+  <g font-size="9.3">
+    <text x="14" y="58" fill="#64748b">WEAPON</text><text x="161" y="58" fill="#f7df1e" text-anchor="end">Keyboard +5</text>
+    <text x="14" y="84" fill="#64748b">SHIELD</text><text x="161" y="84" fill="#00e5ff" text-anchor="end">Stack Overflow</text>
+    <text x="14" y="110" fill="#64748b">ARMOR</text><text x="161" y="110" fill="#e6edf3" text-anchor="end">Hoodie</text>
+    <text x="14" y="136" fill="#64748b">HELMET</text><text x="161" y="136" fill="#e6edf3" text-anchor="end">Headphones</text>
+    <text x="14" y="162" fill="#64748b">RING</text><text x="161" y="162" fill="#ff5f56" text-anchor="end">Caffeine +∞</text>
+    <text x="14" y="188" fill="#64748b">BOOTS</text><text x="161" y="188" fill="#e6edf3" text-anchor="end">Chinelo</text>
+    <text x="14" y="214" fill="#64748b">PET</text><text x="161" y="214" fill="#22c55e" text-anchor="end">Rubber Duck</text>
+  </g>
+</g>
+
+<!-- CURRENT QUEST : own full-width row -->
+<g transform="translate(35,325)" font-family="monospace">
+  <text x="0" y="0" font-size="10" fill="#64748b">CURRENT QUEST</text>
+  <rect x="0" y="12" width="605" height="48" rx="8" fill="#121826" stroke="#6c63ff" stroke-dasharray="7 5">
+    <animate attributeName="stroke-dashoffset" values="0;-48" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <text x="14" y="34" font-size="11" fill="#e6edf3">⚔ Dominar o desenvolvimento full-stack</text>
+  <text x="14" y="51" font-size="10" fill="#00e5ff">████████░░░░░░ 57%</text>
+  <circle cx="570" cy="36" r="6" fill="#22c55e" filter="url(#glow)">
+    <animate attributeName="r" values="4;8;4" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="557" y="54" font-size="8" fill="#22c55e">ONLINE</text>
+</g>
+</svg>
