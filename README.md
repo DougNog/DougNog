@@ -16,6 +16,18 @@
   <img src="https://img.shields.io/github/stars/DougNog?label=Stars&style=flat-square&color=6c63ff&labelColor=0d1117" alt="stars"/>
 </div>
 
+<br/>
+
+## ╭─ Sobre mim
+
+Sou o **Douglas Nogueira**, desenvolvedor em formação com foco em **web e mobile**. Gosto de entender como as camadas de um sistema se conectam — da interface em HTML/CSS/JS, passando pela lógica em PHP, Python e C++, até a modelagem de dados em MySQL — e estou expandindo esse repertório para **Flutter/Dart** e **back-ends em Python**.
+
+Este repositório é o meu cartão de visitas técnico: documento aqui o que estou estudando, as ferramentas que uso no dia a dia e os próximos passos rumo ao meu primeiro projeto full-stack público.
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,php,cpp,py,mysql,dart,flutter,git,github,vscode" alt="Tech stack"/>
+</div>
+
 ---
 
 ## ╭─ Character sheet
@@ -42,10 +54,9 @@
 
 ---
 
-## ╭─ Jornada de aprendizado
+## ╭─ Roadmap
 
-> 🌱 **Ainda não tenho projetos públicos pra mostrar — e tá tudo bem.**
-> Estou na fase de construir uma base sólida. Cada commit aqui é uma página da minha jornada. Volta aqui em breve que vai ter coisa nova. 🚀
+> 🎯 Construindo minha base de forma consistente, um commit de cada vez — cada linha abaixo marca um passo real da jornada, não só uma intenção.
 
 <div align="center">
 
@@ -53,17 +64,17 @@
 ┌─────────────────────────────────────────────┐
 │                                             │
 │   📚  Em aprendizado agora                  │
-│   ───────────────────────                   │
+│   ──────────────────────                   │
 │   →  Aprofundando JavaScript moderno        │
 │   →  Explorando Flutter com Dart            │
-│   →  Construindo backends com Python        │
+│   →  Construindo back-ends com Python       │
 │   →  Modelando dados com MySQL              │
 │                                             │
 │   🎯  Próximo boss                          │
 │   ───────────────────────                   │
 │   →  Primeiro projeto full-stack público    │
 │                                             │
-└─────────────────────────────────────────────┘
+└────────────────────────────────────────────┘
 ```
 
 </div>
