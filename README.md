@@ -4,7 +4,7 @@
 <!-- ============================================================ -->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DougNog/DougNog/f8c4bd8a3eb526ceccf44a5500b79d04e002a48a/assets/banner.svg" alt="DougNog banner animado" width="100%"/>
+  <img src="https://raw.githubusercontent.com/DougNog/DougNog/main/assets/banner-v2.svg" alt="DougNog banner animado" width="100%"/>
 </div>
 
 <br/>
@@ -32,7 +32,7 @@ Este perfil é meu laboratório público: registro o que estou estudando, as fer
 ## ╭─ Character sheet
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DougNog/DougNog/f8c4bd8a3eb526ceccf44a5500b79d04e002a48a/assets/rpg-console.svg" alt="DougNog RPG stats animado" width="100%"/>
+  <img src="https://raw.githubusercontent.com/DougNog/DougNog/main/assets/rpg-console-v2.svg" alt="DougNog RPG stats animado" width="100%"/>
 </div>
 
 ---
